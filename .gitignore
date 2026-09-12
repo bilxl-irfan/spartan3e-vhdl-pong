@@ -1,3 +1,4 @@
+# Xilinx ISE project, cache, and report files
 *.gise
 *.xise
 *.ncd
@@ -19,8 +20,28 @@
 *.unroutes
 *.xpi
 *.xwbt
+*.cpj
+*.par
+*.stx
+*.ngm
+*.bld
+*.mrp
+*.syr
+*.xrpt
+*.cmd_log
+*.prj
+*.tcl
+*.log
+*.placed
+*.unrouted
+*.map
+*.drc
+*.wcfg
+
+# Directories
 _ngo/
 _xmsgs/
 xst/
+xlnx_auto_0_xdb/
 isim/
-*.log
+planAhead_run*/

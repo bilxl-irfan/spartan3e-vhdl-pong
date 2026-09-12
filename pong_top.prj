@@ -1,8 +1,0 @@
-vhdl work "ipcore_dir/ICON.vhd"
-vhdl work "ipcore_dir/ILA.vhd"
-vhdl work "vga_timing.vhd"
-vhdl work "refresh_divider.vhd"
-vhdl work "player_movement.vhd"
-vhdl work "field_renderer.vhd"
-vhdl work "ball_physics.vhd"
-vhdl work "pong_top.vhd"
