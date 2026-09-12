@@ -1,0 +1,77 @@
+##############################################################################
+# Muhammad Wajeeh Ul Hassan - COE758 Project 2
+# VGA Pong Game - Pin Constraints
+# Xilinx Spartan-3E FPGA (XC3S500E-FG320)
+##############################################################################
+
+# ===========================================================================
+# System Clock (50 MHz)
+# ===========================================================================
+NET "clk" LOC = "C9";
+NET "clk" TNM_NET = "clk";
+TIMESPEC TS_clk = PERIOD "clk" 20 ns HIGH 50%;
+
+# ===========================================================================
+# Reset Button
+# ===========================================================================
+NET "rst" LOC = "B18";
+
+# ===========================================================================
+# VGA Interface
+# ===========================================================================
+# Horizontal Sync
+NET "H" LOC = "C5";
+
+# Vertical Sync
+NET "V" LOC = "D5";
+
+# Pixel Clock (25 MHz output to DAC)
+NET "DAC_CLK" LOC = "A4";
+
+# ===========================================================================
+# VGA Color Channels (8 bits each)
+# ===========================================================================
+# Red Channel
+NET "Rout<7>" LOC = "E8";
+NET "Rout<6>" LOC = "F8";
+NET "Rout<5>" LOC = "C7";
+NET "Rout<4>" LOC = "D7";
+NET "Rout<3>" LOC = "F7";
+NET "Rout<2>" LOC = "E7";
+NET "Rout<1>" LOC = "B6";
+NET "Rout<0>" LOC = "A6";
+
+# Green Channel
+NET "Gout<7>" LOC = "F12";
+NET "Gout<6>" LOC = "E12";
+NET "Gout<5>" LOC = "E11";
+NET "Gout<4>" LOC = "F11";
+NET "Gout<3>" LOC = "C11";
+NET "Gout<2>" LOC = "D11";
+NET "Gout<1>" LOC = "E9";
+NET "Gout<0>" LOC = "F9";
+
+# Blue Channel
+NET "Bout<7>" LOC = "B16";
+NET "Bout<6>" LOC = "A16";
+NET "Bout<5>" LOC = "D14";
+NET "Bout<4>" LOC = "C14";
+NET "Bout<3>" LOC = "B14";
+NET "Bout<2>" LOC = "A14";
+NET "Bout<1>" LOC = "B13";
+NET "Bout<0>" LOC = "A13";
+
+# ===========================================================================
+# Player Control Switches
+# ===========================================================================
+# Player 1 Controls (Left Paddle - Blue)
+NET "SW0" LOC = "N17";  # Player 1 Up
+NET "SW1" LOC = "H18";  # Player 1 Down
+
+# Player 2 Controls (Right Paddle - Pink)
+NET "SW2" LOC = "L14";  # Player 2 Up
+NET "SW3" LOC = "L13";  # Player 2 Down
+
+##############################################################################
+# End of Constraints
+##############################################################################
